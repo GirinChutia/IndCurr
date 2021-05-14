@@ -14,3 +14,7 @@ Resnet34 trained for Indian Currency Recognition
 ![](https://i.imgur.com/sYqFFVv.gif)
 ![](https://i.imgur.com/TIODbHY.gif)
 ![](https://i.imgur.com/r2Zi02f.gif)
+
+<div class="text-purple">
+  This text is purple, <a href="#" class="text-inherit">including the link</a>
+</div>
