@@ -1,5 +1,5 @@
 # IndCurr
-CNN for Indian Currency Prediction
+Resnet34 trained for Indian Currency Prediction
 
 ## Inference Examples 
 ![](https://i.imgur.com/sYqFFVv.gif)
