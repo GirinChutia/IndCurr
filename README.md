@@ -15,3 +15,7 @@ Resnet34 trained for Indian Currency Recognition
 ![](https://i.imgur.com/TIODbHY.gif)
 ![](https://i.imgur.com/r2Zi02f.gif)
 
+### Real world use cases:
+- Fake currency detection.
+- Currency recognition system from visually impaired/blind peoples.
+
