@@ -1,5 +1,5 @@
 # IndCurr
-Resnet34 trained for Indian Currency Prediction
+Resnet34 trained for Indian Currency Detection
 
 ## Inference Examples 
 ![](https://i.imgur.com/sYqFFVv.gif)
