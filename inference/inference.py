@@ -83,7 +83,7 @@ class Inference:
                 new_w = int(width / 1.1)
                 
                 if _outmet == True:
-                    output = cv2.VideoWriter("cam_video.mp4", vid_cod,20, (new_w, new_h))
+                    output = cv2.VideoWriter("inference_out.mp4", vid_cod,20, (new_w, new_h))
                     _outmet = False
                     
                 frame = cv2.resize(frame, (new_w, new_h))
