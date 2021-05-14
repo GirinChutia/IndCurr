@@ -2,4 +2,4 @@
 CNN for Indian Currency Prediction
 
 
-![](https://imgflip.com/gif/59io7d)
+![](https://i.imgur.com/sYqFFVv.gif)
