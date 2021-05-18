@@ -1,6 +1,11 @@
 # IndCurr
 Resnet34 trained for Indian Currency Recognition
 
+### Inference Examples 
+![](https://i.imgur.com/Ea1LtVz.gif)
+![](https://i.imgur.com/TIODbHY.gif)
+![](https://i.imgur.com/r2Zi02f.gif)
+
 ### Accuracy of each class on test dataset
 
 - Classes : ['Rs 10','Rs 20', 'Rs 50', 'Rs 100', 'Rs 200', 'Rs 500', 'Rs 2000']
@@ -10,10 +15,6 @@ Resnet34 trained for Indian Currency Recognition
 ### Confusion matrix
 ![](https://i.imgur.com/9loA3gh.png)
 
-### Inference Examples 
-![](https://i.imgur.com/Ea1LtVz.gif)
-![](https://i.imgur.com/TIODbHY.gif)
-![](https://i.imgur.com/r2Zi02f.gif)
 
 ### Real world use cases:
 - Fake currency detection.
