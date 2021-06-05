@@ -8,7 +8,7 @@ Resnet34 trained for Indian Currency Recognition
 
 ### Streamlit Serving
 
-![](https://imgur.com/a/DZAm8TC)
+![](https://imgur.com/CESMY3T)
 
 
 ### Accuracy of each class on test dataset
