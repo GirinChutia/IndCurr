@@ -6,6 +6,11 @@ Resnet34 trained for Indian Currency Recognition
 ![](https://i.imgur.com/TIODbHY.gif)
 ![](https://i.imgur.com/r2Zi02f.gif)
 
+### Streamlit Serving
+
+![](https://imgur.com/a/DZAm8TC)
+
+
 ### Accuracy of each class on test dataset
 
 - Classes : ['Rs 10','Rs 20', 'Rs 50', 'Rs 100', 'Rs 200', 'Rs 500', 'Rs 2000']
