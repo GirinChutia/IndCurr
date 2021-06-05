@@ -18,9 +18,13 @@ class Inference:
         self.labels = ['Rs 10','Rs 20','Rs 50','Rs 100','Rs 200','Rs 500','Rs 2000']
         self.model = self.model.to(self.device)
         
-    def run_image(self,path):
+    def run_image(self,path,show=True):
         
         img = Image.open(path)
+        
+        if img.mode != 'RGB':
+                img = img.convert('RGB')
+        
         img = transforms.Resize(size=(224, 224))(img)
         img = transforms.ToTensor()(img)
         img = transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225])(img)
@@ -34,15 +38,22 @@ class Inference:
             indx = torch.argmax(prediction)
             prob = s_pred[0][indx]
         
-        if prob > 0.:
+        if prob > 0.75:
             label = self.labels[indx] + f', Prob : {round(prob.item()*100,2)}'
         else:
             label = 'No Currency'
             
-        im = plt.imread(path)
-        plt.imshow(im)
-        plt.axis('off')
-        plt.title(f'Predicted Indian Currency : {label}')
+        self.result = f'Predicted Indian Currency : {label}'
+        
+        if show == True: 
+            im = plt.imread(path)
+            plt.imshow(im)
+            plt.axis('off')
+            plt.title(self.result)
+        
+    def return_result(self):
+        
+        return self.result
       
     
     def predict(self,image):
@@ -83,7 +94,7 @@ class Inference:
                 new_w = int(width / 1.1)
                 
                 if _outmet == True:
-                    output = cv2.VideoWriter("inference_out.mp4", vid_cod,20, (new_w, new_h))
+                    output = cv2.VideoWriter("cam_video.mp4", vid_cod,20, (new_w, new_h))
                     _outmet = False
                     
                 frame = cv2.resize(frame, (new_w, new_h))
@@ -116,9 +127,10 @@ class Inference:
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
             
-        
+            # After the loop release the cap object
             vid.release()
             output.release()
+            # Destroy all the windows
             cv2.destroyAllWindows()
             
         
