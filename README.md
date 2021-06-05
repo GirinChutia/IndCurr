@@ -6,7 +6,7 @@ Resnet34 trained for Indian Currency Recognition
 ![](https://i.imgur.com/TIODbHY.gif)
 ![](https://i.imgur.com/r2Zi02f.gif)
 
-### Streamlit Serving
+### Streamlit App
 ![](https://i.imgur.com/0UPyBnO.gif)
 
 
